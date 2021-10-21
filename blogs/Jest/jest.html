@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>关于 Jest 前端自动化测试的感想 | Hoshiu</title>
+    <meta name="generator" content="VuePress 1.8.2">
+    <link rel="icon" href="https://i.postimg.cc/T1dHjKTF/1582774527132.png">
+    <meta name="description" content="投递日常">
+    <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no">
+    
+    <link rel="preload" href="/assets/css/0.styles.67ab6878.css" as="style"><link rel="preload" href="/assets/js/app.ba9dffa7.js" as="script"><link rel="preload" href="/assets/js/3.e187f4e7.js" as="script"><link rel="preload" href="/assets/js/1.f46d3efc.js" as="script"><link rel="preload" href="/assets/js/15.f583dd68.js" as="script"><link rel="prefetch" href="/assets/js/10.86eab0e0.js"><link rel="prefetch" href="/assets/js/11.f52a8d80.js"><link rel="prefetch" href="/assets/js/12.15e6bcae.js"><link rel="prefetch" href="/assets/js/13.d01b6926.js"><link rel="prefetch" href="/assets/js/14.f349183c.js"><link rel="prefetch" href="/assets/js/16.c28ea01e.js"><link rel="prefetch" href="/assets/js/17.2e2dc605.js"><link rel="prefetch" href="/assets/js/18.6ceabf32.js"><link rel="prefetch" href="/assets/js/19.7711c2fc.js"><link rel="prefetch" href="/assets/js/20.088818e4.js"><link rel="prefetch" href="/assets/js/21.835e04b1.js"><link rel="prefetch" href="/assets/js/22.ebd1b942.js"><link rel="prefetch" href="/assets/js/4.bd9aa751.js"><link rel="prefetch" href="/assets/js/5.6d45fd98.js"><link rel="prefetch" href="/assets/js/6.53a3fb6b.js"><link rel="prefetch" href="/assets/js/7.4a73fb61.js"><link rel="prefetch" href="/assets/js/8.13a9960b.js"><link rel="prefetch" href="/assets/js/9.c85343be.js">
+    <link rel="stylesheet" href="/assets/css/0.styles.67ab6878.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container no-sidebar" data-v-1156296a><div data-v-1156296a><div id="loader-wrapper" class="loading-wrapper" data-v-d48f4d20 data-v-1156296a data-v-1156296a><div class="loader-main" data-v-d48f4d20><div data-v-d48f4d20></div><div data-v-d48f4d20></div><div data-v-d48f4d20></div><div data-v-d48f4d20></div></div> <!----> <!----></div> <div class="password-shadow password-wrapper-out" style="display:none;" data-v-4e82dffc data-v-1156296a data-v-1156296a><h3 class="title" data-v-4e82dffc data-v-4e82dffc>Hoshiu</h3> <p class="description" data-v-4e82dffc data-v-4e82dffc>投递日常</p> <label id="box" class="inputBox" data-v-4e82dffc data-v-4e82dffc><input type="password" value="" data-v-4e82dffc> <span data-v-4e82dffc>Konck! Knock!</span> <button data-v-4e82dffc>OK</button></label> <div class="footer" data-v-4e82dffc data-v-4e82dffc><span data-v-4e82dffc><i class="iconfont reco-theme" data-v-4e82dffc></i> <a target="blank" href="https://vuepress-theme-reco.recoluan.com" data-v-4e82dffc>vuePress-theme-reco</a></span> <span data-v-4e82dffc><i class="iconfont reco-copyright" data-v-4e82dffc></i> <a data-v-4e82dffc><span data-v-4e82dffc>Hoshiu</span>
+            
+          <span data-v-4e82dffc>2020 - </span>
+          2021
+        </a></span></div></div> <div class="hide" data-v-1156296a><header class="navbar" data-v-1156296a><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/" class="home-link router-link-active"><img src="https://i.postimg.cc/T1dHjKTF/1582774527132.png" alt="Hoshiu" class="logo"> <span class="site-name">Hoshiu</span></a> <div class="links"><div class="color-picker"><a class="color-button"><i class="iconfont reco-color"></i></a> <div class="color-picker-menu" style="display:none;"><div class="mode-options"><h4 class="title">Choose mode</h4> <ul class="color-mode-options"><li class="dark">dark</li><li class="auto active">auto</li><li class="light">light</li></ul></div></div></div> <div class="search-box"><i class="iconfont reco-search"></i> <input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/" class="nav-link"><i class="iconfont reco-home"></i>
+  主页
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title"><i class="iconfont reco-category"></i>
+      博客
+    </span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/categories/学习笔记/" class="nav-link"><i class="undefined"></i>
+  学习笔记
+</a></li><li class="dropdown-item"><!----> <a href="/categories/感想拾遗/" class="nav-link"><i class="undefined"></i>
+  感想拾遗
+</a></li></ul></div></div><div class="nav-item"><a href="/tag/" class="nav-link"><i class="iconfont reco-tag"></i>
+  标签
+</a></div><div class="nav-item"><a href="/timeline/" class="nav-link"><i class="iconfont reco-date"></i>
+  时间轴
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title"><i class="iconfont reco-account"></i>
+      contact
+    </span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="https://github.com/Hoshiu" target="_blank" rel="noopener noreferrer" class="nav-link external"><i class="iconfont reco-github"></i>
+  GitHub
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li><li class="dropdown-item"><!----> <a href="https://blog.csdn.net/Ryou__?spm=1038.2274.3001.5343&amp;type=blog" target="_blank" rel="noopener noreferrer" class="nav-link external"><i class="iconfont reco-csdn"></i>
+  CSDN
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li><li class="dropdown-item"><!----> <a href="/About/" class="nav-link"><i class="iconfont reco-wechat"></i>
+  AboutMe
+</a></li></ul></div></div> <!----></nav></div></header> <div class="sidebar-mask" data-v-1156296a></div> <aside class="sidebar" data-v-1156296a><div class="personal-info-wrapper" data-v-828910c6 data-v-1156296a><img src="/Rintaron.jpg" alt="author-avatar" class="personal-img" data-v-828910c6> <h3 class="name" data-v-828910c6>
+    Hoshiu
+  </h3> <div class="num" data-v-828910c6><div data-v-828910c6><h3 data-v-828910c6>9</h3> <h6 data-v-828910c6>Articles</h6></div> <div data-v-828910c6><h3 data-v-828910c6>8</h3> <h6 data-v-828910c6>Tags</h6></div></div> <ul class="social-links" data-v-828910c6></ul> <hr data-v-828910c6></div> <nav class="nav-links"><div class="nav-item"><a href="/" class="nav-link"><i class="iconfont reco-home"></i>
+  主页
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title"><i class="iconfont reco-category"></i>
+      博客
+    </span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/categories/学习笔记/" class="nav-link"><i class="undefined"></i>
+  学习笔记
+</a></li><li class="dropdown-item"><!----> <a href="/categories/感想拾遗/" class="nav-link"><i class="undefined"></i>
+  感想拾遗
+</a></li></ul></div></div><div class="nav-item"><a href="/tag/" class="nav-link"><i class="iconfont reco-tag"></i>
+  标签
+</a></div><div class="nav-item"><a href="/timeline/" class="nav-link"><i class="iconfont reco-date"></i>
+  时间轴
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title"><i class="iconfont reco-account"></i>
+      contact
+    </span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="https://github.com/Hoshiu" target="_blank" rel="noopener noreferrer" class="nav-link external"><i class="iconfont reco-github"></i>
+  GitHub
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li><li class="dropdown-item"><!----> <a href="https://blog.csdn.net/Ryou__?spm=1038.2274.3001.5343&amp;type=blog" target="_blank" rel="noopener noreferrer" class="nav-link external"><i class="iconfont reco-csdn"></i>
+  CSDN
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li><li class="dropdown-item"><!----> <a href="/About/" class="nav-link"><i class="iconfont reco-wechat"></i>
+  AboutMe
+</a></li></ul></div></div> <!----></nav> <!----> </aside> <div class="password-shadow password-wrapper-in" style="display:none;" data-v-4e82dffc data-v-1156296a><h3 class="title" data-v-4e82dffc data-v-4e82dffc>关于 Jest 前端自动化测试的感想</h3> <!----> <label id="box" class="inputBox" data-v-4e82dffc data-v-4e82dffc><input type="password" value="" data-v-4e82dffc> <span data-v-4e82dffc>Konck! Knock!</span> <button data-v-4e82dffc>OK</button></label> <div class="footer" data-v-4e82dffc data-v-4e82dffc><span data-v-4e82dffc><i class="iconfont reco-theme" data-v-4e82dffc></i> <a target="blank" href="https://vuepress-theme-reco.recoluan.com" data-v-4e82dffc>vuePress-theme-reco</a></span> <span data-v-4e82dffc><i class="iconfont reco-copyright" data-v-4e82dffc></i> <a data-v-4e82dffc><span data-v-4e82dffc>Hoshiu</span>
+            
+          <span data-v-4e82dffc>2020 - </span>
+          2021
+        </a></span></div></div> <div data-v-1156296a><main class="page"><section><div class="page-title"><h1 class="title">关于 Jest 前端自动化测试的感想</h1> <div data-v-1ff7123e><i class="iconfont reco-account" data-v-1ff7123e><span data-v-1ff7123e>Hoshiu</span></i> <i class="iconfont reco-date" data-v-1ff7123e><span data-v-1ff7123e>9/24/2021</span></i> <i class="iconfont reco-eye" data-v-1ff7123e><span id="/blogs/Jest/jest.html" data-flag-title="Your Article Title" class="leancloud-visitors" data-v-1ff7123e><a class="leancloud-visitors-count" style="font-size:.9rem;font-weight:normal;color:#999;"></a></span></i> <i class="tags iconfont reco-tag" data-v-1ff7123e><span class="tag-item" data-v-1ff7123e>Jest</span></i></div></div> <div class="theme-reco-content content__default"><h1 id="前端自动化测试"><a href="#前端自动化测试" class="header-anchor">#</a> 前端自动化测试</h1> <p>一开始对自动化测试产生兴趣是源于 Leetcode 刷题，经由一位学长推荐，研究了一下自动化测试的东西。</p> <h2 id="前端自动化测试框架-jest"><a href="#前端自动化测试框架-jest" class="header-anchor">#</a> 前端自动化测试框架：Jest</h2> <blockquote><p>Jest 是一个令人愉快的 JavaScript 测试框架，专注于 简洁明快。</p> <p>这些项目都在使用 Jest：<a href="https://babeljs.io/" target="_blank" rel="noopener noreferrer">Babel<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a>、 <a href="https://www.typescriptlang.org/" target="_blank" rel="noopener noreferrer">TypeScript<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a>、 <a href="https://nodejs.org/" target="_blank" rel="noopener noreferrer">Node<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a>、 <a href="https://reactjs.org/" target="_blank" rel="noopener noreferrer">React<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a>、 <a href="https://angular.io/" target="_blank" rel="noopener noreferrer">Angular<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a>、 <a href="https://vuejs.org/" target="_blank" rel="noopener noreferrer">Vue<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a> 等等！</p></blockquote> <blockquote><p>Jest 是 Facebook 出品的一个测试框架，相对其他测试框架，其一大特点就是就是内置了常用的测试工具，比如自带断言、测试覆盖率工具，实现了开箱即用。</p> <p>而作为一个面向前端的测试框架， Jest 可以利用其特有的<a href="https://link.zhihu.com/?target=http%3A//facebook.github.io/jest/docs/zh-Hans/snapshot-testing.html%23content" target="_blank" rel="noopener noreferrer">快照测试<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a>功能，通过比对 UI 代码生成的快照文件，实现对 React 等常见框架的自动测试。</p> <p>此外， Jest 的测试用例是并行执行的，而且只执行发生改变的文件所对应的测试，提升了测试速度。目前在 Github 上其 star 数已经破万；而除了 Facebook 外，业内其他公司也开始从其它测试框架转向 Jest ，比如 <a href="https://link.zhihu.com/?target=https%3A//medium.com/airbnb-engineering/unlocking-test-performance-migrating-from-mocha-to-jest-2796c508ec50" target="_blank" rel="noopener noreferrer">Airbnb 的尝试<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a> ，相信未来 Jest 的发展趋势仍会比较迅猛。</p></blockquote> <p>jest 的安装相对简单, <code>yarn add jest</code>即可。</p> <p>同时，修改<code>package.json</code>内容如下：</p> <div class="language- extra-class"><pre class="language-text"><code>{
+  &quot;scripts&quot;: {
+    &quot;test&quot;: &quot;jest&quot;
+  }
+}
+</code></pre></div><p>这一步是为了引入 <code>Jest</code>，使之能够对本地代码进行测试。</p> <h2 id="创建方法"><a href="#创建方法" class="header-anchor">#</a> 创建方法</h2> <img src="/img/Jest/image-20210926004040912.png" alt="Create"> <p>首先，我们创建一个<code>math.js</code>的文件，并在<code>index.html</code>中引入<code>math.js</code></p> <div class="language-js extra-class"><pre class="language-js"><code><span class="token comment">//	math.js</span>
+<span class="token keyword">export</span> <span class="token keyword">function</span> <span class="token function">add</span><span class="token punctuation">(</span><span class="token parameter">a<span class="token punctuation">,</span> b</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  <span class="token keyword">return</span> a <span class="token operator">+</span> b<span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+
+<span class="token keyword">export</span> <span class="token keyword">function</span> <span class="token function">minus</span><span class="token punctuation">(</span><span class="token parameter">a<span class="token punctuation">,</span> b</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  <span class="token keyword">return</span> a <span class="token operator">-</span> b<span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+
+<span class="token keyword">export</span> <span class="token keyword">function</span> <span class="token function">multi</span><span class="token punctuation">(</span><span class="token parameter">a<span class="token punctuation">,</span> b</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  <span class="token keyword">return</span> a <span class="token operator">*</span> b<span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+
+<span class="token comment">//  一般不会用 commonJS 的模块导出或引入，而会使用 ES Module 的方式</span>
+<span class="token comment">//	为了使用 ES Module 的方式，需要配合 babel 使用，将其转换成 commonJS</span>
+</code></pre></div><div class="language- extra-class"><pre class="language-text"><code>npm install @bebal/core@7.4.5 @beabel/preset-env@7.4.5
+</code></pre></div><div class="language- extra-class"><pre class="language-text"><code>//	.babelrc
+//  对 babel 进行配置
+{
+  &quot;presets&quot;: [  //  配置 babel 使用哪些插件的集合来对代码进行转换
+    [&quot;@babel/preset-env&quot;, {
+      &quot;targets&quot;: {  //  当前插件集合的配置项
+        &quot;node&quot;: &quot;current&quot; //  根据当前 node 环境结合 @babel.preset-env 来对代码进行转换
+      }
+    }]
+  ]
+}
+
+//  yarn jest
+//  jest 内部集成插件 =&gt; (babel-jest) =&gt; 检测当前环境是否安装了 babel-core
+// 若安装了 babel-core =&gt; 拿取 .babelrc 的配置
+//  在运行测试之前，结合 babel 将当前代码进行一次转换
+//  运行转换过的测试用例代码
+</code></pre></div><p><code>index.html</code></p> <img src="/img/Jest/image-20210926004222094.png" alt="Create"> <p>此时如果打开浏览器浏览该页面，<code>index.html</code>会加载<code>math.js</code></p> <p>但如何进行测试呢？我们需要创建一个仍以<code>math</code>命名的后缀名为<code>.test.js</code>的文件。</p> <div class="language-js extra-class"><pre class="language-js"><code><span class="token comment">//	math.test.js</span>
+<span class="token keyword">import</span> <span class="token punctuation">{</span> add<span class="token punctuation">,</span> minus<span class="token punctuation">,</span> multi <span class="token punctuation">}</span> <span class="token keyword">from</span> <span class="token string">'./math'</span>
+
+<span class="token function">test</span><span class="token punctuation">(</span><span class="token string">'测试加法 3 + 7'</span><span class="token punctuation">,</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span>
+  <span class="token function">expect</span><span class="token punctuation">(</span><span class="token function">add</span><span class="token punctuation">(</span><span class="token number">3</span><span class="token punctuation">,</span><span class="token number">7</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">toBe</span><span class="token punctuation">(</span><span class="token number">10</span><span class="token punctuation">)</span>
+<span class="token punctuation">}</span><span class="token punctuation">)</span>
+<span class="token function">test</span><span class="token punctuation">(</span><span class="token string">'测试减法 3 - 3'</span><span class="token punctuation">,</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span>
+  <span class="token function">expect</span><span class="token punctuation">(</span><span class="token function">minus</span><span class="token punctuation">(</span><span class="token number">3</span><span class="token punctuation">,</span><span class="token number">3</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">toBe</span><span class="token punctuation">(</span><span class="token number">0</span><span class="token punctuation">)</span>
+<span class="token punctuation">}</span><span class="token punctuation">)</span>
+<span class="token function">test</span><span class="token punctuation">(</span><span class="token string">'测试乘法 3 * 3'</span><span class="token punctuation">,</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span>
+  <span class="token function">expect</span><span class="token punctuation">(</span><span class="token function">multi</span><span class="token punctuation">(</span><span class="token number">3</span><span class="token punctuation">,</span><span class="token number">3</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">toBe</span><span class="token punctuation">(</span><span class="token number">9</span><span class="token punctuation">)</span>
+<span class="token punctuation">}</span><span class="token punctuation">)</span>
+
+<span class="token comment">//  单元测试（模块测试），集成测试（多个模块测试）。</span>
+</code></pre></div><p>其中，<code>test</code>与<code>expect</code>皆为<code>Jest</code>自带函数，前者创建一个测试实例，后者对期待结果进行判定。其中，toBe('Hello world')便是一句断言（ Jest 管它叫 “matcher” ，想了解更多 matcher 请参考<a href="https://jestjs.io/zh-Hans/docs/using-matchers" target="_blank" rel="noopener noreferrer">文档<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a>）。</p> <p>此时，我们运行<code>yarn jest</code></p> <img src="/img/Jest/P@)S8ZN[[CW6@)60G]W)}BG.png" alt="Create"> <p>此时我们修改乘法函数的内容，再次进行测试</p> <div class="language-js extra-class"><pre class="language-js"><code><span class="token keyword">export</span> <span class="token keyword">function</span> <span class="token function">multi</span><span class="token punctuation">(</span><span class="token parameter">a<span class="token punctuation">,</span> b</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  <span class="token keyword">return</span> a <span class="token operator">+</span> b<span class="token punctuation">;</span>		<span class="token comment">// return a * b</span>
+<span class="token punctuation">}</span>
+</code></pre></div><p>此时测试失败，并会标识出失败的断言位置，结果如下：</p> <img src="/img/Jest/image-20210926005413766.png" alt="Create"> <p>由此，我们创建了一个非常简单的实例，来对自己的代码进行测试，并能检测出问题所在。</p> <h2 id="常用匹配器"><a href="#常用匹配器" class="header-anchor">#</a> 常用匹配器</h2> <p>事实上，Jest 的控制台也内置了一些快捷指令以及常用的匹配器</p> <div class="language- extra-class"><pre class="language-text"><code>//	math.test.js
+//  测试用例
+test('测试 10 与 10 相匹配', () =&gt; {
+  //  toBe 匹配器 matchers
+  //  toBe 适用于简单类型的值进行比较，引用类型由于存放地址不同无法使用其进行比较
+  expect(10).toBe(10)
+})
+
+test('测试 10 与 10 相匹配', () =&gt; {
+  //  toEqual 匹配器 matchers
+  //  使用 toEqual 对内容进行匹配时，只匹配内容而不匹配引用，因此可以对引用类型进行校验
+  const a = { one : 1 };
+  expect(a).toEqual({ one: 1 });
+})
+
+//  toBeNull()、toBeUndefined、toBeDefined（被定义过，即使是null也可以）
+//  toBeTruthy（true）、toBeFalsy（false）
+
+test('not 匹配器', () =&gt; {
+  const a = 1
+  expect(a).not.toBeFalsy();  // not 就是非的意思
+  expect(a).toBeTruthy();
+})
+
+//  数字相关匹配器
+test('toBeGreaterThan 匹配器', () =&gt; {
+  const count= 10
+  expect(count).toBeGreaterThan(9) //  前者的值应大于后者
+})
+
+test('toBeLessThan 匹配器', () =&gt; {
+  const count= 10
+  expect(count).toBeLessThan(11) //  前者的值应小于后者
+})
+
+test('toBeGreaterThanOrEqual 匹配器', () =&gt; {
+  const count= 10
+  expect(count).toBeGreaterThanOrEqual(10) //  前者的值应大于等于后者
+})
+
+//  同理还会有 toBeLessThanOrEqual
+
+test('toBeCloseTo 匹配器', () =&gt; {
+  const firstNumber = 0.1;
+  const secondNumber = 0.2;
+  expect(firstNumber + secondNumber).toBeCloseTo(0.3) //  前者的值是否非常接近后者，用于解决浮点数不能精确相等的问题
+})
+
+//  String
+test('toMatch 匹配器', () =&gt; {
+  const str = 'http://hoshiu.github.io';
+  const secondNumber = 0.2;
+  expect(str).toMatch('hoshiu')   //  后面的单词包含在 str 之中
+})
+
+//  Array，Set
+test('toContain 匹配器', () =&gt; {
+  const arr = ['hoshiu', 'github'];
+  const data = new Set(arr);
+  expect(data).toContain('hoshiu');   //  测试数组中是否包含后者
+})
+
+//  处理异常
+const throwNewErrorFunc = () =&gt; {
+  throw new Error('this is a new Error');
+}
+test('toThrow 匹配器', () =&gt; {
+  expect(throwNewErrorFunc).toThrow('this is a new Error')  //  toThrow 函数中不写入内容则判断报错就行，写入了内容则要判断内容与前者的报错内容是否一致 
+})
+
+//  Watch Usage
+//  Press f 会再次测试，但本次只测试上一次为通过的测试，若之前通过了测试后在修改当前内容也不会重新测试
+//  再次 Press f 退出
+
+//  Press o 会重新测试刚修改过的文件的相关的测试，需要配合 git 使用，与本地仓库进行对比
+//  再次 Press o 退出 package.json 中配置 jest --watch 则只会测试修改文件中的 test 函数，而不会重新测试整个文件
+
+//  Press p 当使用 --watchAll 时会出现 p 模式，根据用户输入的文件内容来选择文件进行测试
+//  再次 Press t 退出
+
+//  Press t 根据测试用例的名字来筛选测试用例
+//  再次 Press t 退出
+</code></pre></div><h2 id="用例的预处理或后处理"><a href="#用例的预处理或后处理" class="header-anchor">#</a> 用例的预处理或后处理</h2> <p>有时我们想在测试开始之前进行下环境的检查、或者在测试结束之后作一些清理操作，这就需要对用例进行预处理或后处理。对测试文件中所有的用例进行统一的预处理，可以使用 beforeAll() 函数；而如果想在每个用例开始前进行都预处理，则可使用 beforeEach() 函数。至于后处理，也有对应的 afterAll() 和 afterEach() 函数。</p> <p>如果只是想对某几个用例进行同样的预处理或后处理，可以将先将这几个用例归为一组。使用 describe() 函数即可表示一组用例，再将上面提到的四个处理函数置于 describe() 的处理回调内，就实现了对一组用例的预处理或后处理：</p> <div class="language- extra-class"><pre class="language-text"><code>describe('test testObject', () =&gt; {
+    beforeAll(() =&gt; {
+// 预处理操作
+    })
+
+    test('is foo', () =&gt; {
+       expect(testObject.foo).toBeTruthy()
+    })
+
+    test('is not bar', () =&gt; {
+        expect(testObject.bar).toBeFalsy()
+    })
+
+    afterAll(() =&gt; {
+// 后处理操作
+    })
+})
+</code></pre></div><h2 id="异步代码"><a href="#异步代码" class="header-anchor">#</a> 异步代码</h2> <p>异步代码的测试，关键点在于告知测试框架测试何时完成，让其在恰当的时机进行断言。针对几种常见的异步代码形式， Jest 也提供了相应的异步测试语法。首先对于异步回调，向其传入并执行 done 函数， Jest 会等 done 回调执行结束后，结束测试：</p> <div class="language- extra-class"><pre class="language-text"><code>//	asyncHello.js
+export const asyncHello= (name, fn) =&gt; setTimeout(() =&gt; fn(`Hello ${name}`), 1000)
+
+// asyncHello.test.js
+import { asyncHello } from './asyncHello.js'
+
+test('should get &quot;Hello world&quot;', (done) =&gt; {
+    asyncHello('world', (result) =&gt; {
+        expect(result).toBe('Hello world')
+        done()
+    })
+})
+</code></pre></div><p>此外，对于 Promise 控制的异步代码，可以直接在 then 回调中进行断言，只要保证在用例中返回该 Promise 对象即可：</p> <div class="language-text extra-class"><pre class="language-text"><code>// promiseHello.js
+export const promiseHello= (name) =&gt; {
+	return new Promise((resolve) =&gt; {
+        setTimeout(() =&gt; resolve(`Hello ${name}`), 1000)
+    })
+}
+
+// promiseHello.test.js
+import { promiseHello } from './promiseHello.js'
+
+it('should get &quot;Hello world&quot;', () =&gt; {
+    expect.assertions(1); // 确保至少有一个断言被调用，否则测试失败
+	return promiseHello('world').then((data) =&gt; {
+        expect(data).toBe('Hello world')
+    })
+})
+</code></pre></div><p>Jest 也支持 async/await 语法的测试，无需多余的操作，只要在 await 后进行断言即可，和同步测试的写法一致。</p> <h2 id="测试覆盖率"><a href="#测试覆盖率" class="header-anchor">#</a> 测试覆盖率</h2> <p>当我们在<code>package.json</code>中添加<code>&quot;coverage&quot;: &quot;jest --coverage&quot;</code>时，则会运行 <code>Jest</code>内置的测试覆盖率工具<a href="https://link.zhihu.com/?target=https%3A//github.com/gotwarlost/istanbul" target="_blank" rel="noopener noreferrer">istanbul<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a>，并且生成一个测试覆盖率的报告，在终端输出一个表格，也可以作为网页打开它。</p> <img src="/img/Jest/image-20210926011412176.png" alt="Create"> <img src="/img/Jest/image-20210926011336176.png" alt="Create"> <img src="/img/Jest/image-20210926011517100.png" alt="Create"> <h2 id="在前端框架中使用"><a href="#在前端框架中使用" class="header-anchor">#</a> 在前端框架中使用</h2> <p><code>Jest</code> 可以搭配<code>Vue</code>、<code>React</code>等多种框架进行自动化测试。</p> <blockquote><p>Jest 的一大特色就是提供了<a href="https://link.zhihu.com/?target=http%3A//facebook.github.io/jest/docs/zh-Hans/snapshot-testing.html%23content" target="_blank" rel="noopener noreferrer">快照测试<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a>功能。首次运行快照测试，会让 UI 框架生产一个可读的快照，再次测试时便会通过比对快照文件和新 UI 框架产生的快照判断测试是否通过。</p></blockquote> <p>这里留一个坑，以后回来啃。</p> <h2 id="总结"><a href="#总结" class="header-anchor">#</a> 总结</h2> <p>总的来说，我是因为 <code>Leetcode</code>刷题与它结缘，它也确实为我在刷题时提供了很多便利。在这里推荐一下 <code>vscode</code>中的<code>Leetcode</code>插件，它可以帮助你在自己的编辑器中连接<code>Leetcode</code>刷题，在这里解决每日一题和一些自己想做的题非常方便，插件自带了测试以及提交功能，非常好用。</p> <p>相信前端的自动化测试也有发展的前途，从以下几点非常适合引入：</p> <ul><li>需要长期维护的项目。它们需要测试来保障代码可维护性、功能的稳定性</li> <li>较为稳定的项目、或项目中较为稳定的部分。给它们写测试用例，维护成本低</li> <li>被多次复用的部分，比如一些通用组件和库函数。因为多处复用，更要保障质量</li></ul> <p>虽然我目前只用于刷题，但相信它对于前端行业来说会拥有自己的一席之地。</p></div></section> <footer class="page-edit"><!----> <!----></footer> <!----> <div class="comments-wrapper"><!----></div> <ul class="side-bar sub-sidebar-wrapper" style="width:12rem;" data-v-70334359><li class="level-2" data-v-70334359><a href="/blogs/Jest/jest.html#前端自动化测试框架-jest" class="sidebar-link reco-side-前端自动化测试框架-jest" data-v-70334359>前端自动化测试框架：Jest</a></li><li class="level-2" data-v-70334359><a href="/blogs/Jest/jest.html#创建方法" class="sidebar-link reco-side-创建方法" data-v-70334359>创建方法</a></li><li class="level-2" data-v-70334359><a href="/blogs/Jest/jest.html#常用匹配器" class="sidebar-link reco-side-常用匹配器" data-v-70334359>常用匹配器</a></li><li class="level-2" data-v-70334359><a href="/blogs/Jest/jest.html#用例的预处理或后处理" class="sidebar-link reco-side-用例的预处理或后处理" data-v-70334359>用例的预处理或后处理</a></li><li class="level-2" data-v-70334359><a href="/blogs/Jest/jest.html#异步代码" class="sidebar-link reco-side-异步代码" data-v-70334359>异步代码</a></li><li class="level-2" data-v-70334359><a href="/blogs/Jest/jest.html#测试覆盖率" class="sidebar-link reco-side-测试覆盖率" data-v-70334359>测试覆盖率</a></li><li class="level-2" data-v-70334359><a href="/blogs/Jest/jest.html#在前端框架中使用" class="sidebar-link reco-side-在前端框架中使用" data-v-70334359>在前端框架中使用</a></li><li class="level-2" data-v-70334359><a href="/blogs/Jest/jest.html#总结" class="sidebar-link reco-side-总结" data-v-70334359>总结</a></li></ul></main> <!----></div></div></div></div><div class="global-ui"><div class="back-to-ceiling" style="right:1rem;bottom:6rem;width:2.5rem;height:2.5rem;border-radius:.25rem;line-height:2.5rem;display:none;" data-v-c6073ba8 data-v-c6073ba8><svg t="1574745035067" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="5404" class="icon" data-v-c6073ba8><path d="M526.60727968 10.90185116a27.675 27.675 0 0 0-29.21455937 0c-131.36607665 82.28402758-218.69155461 228.01873535-218.69155402 394.07834331a462.20625001 462.20625001 0 0 0 5.36959153 69.94390903c1.00431239 6.55289093-0.34802892 13.13561351-3.76865779 18.80351572-32.63518765 54.11355614-51.75690182 118.55860487-51.7569018 187.94566865a371.06718723 371.06718723 0 0 0 11.50484808 91.98906777c6.53300375 25.50556257 41.68394495 28.14064038 52.69160883 4.22606766 17.37162448-37.73630017 42.14135425-72.50938081 72.80769204-103.21549295 2.18761121 3.04276886 4.15646224 6.24463696 6.40373557 9.22774369a1871.4375 1871.4375 0 0 0 140.04691725 5.34970492 1866.36093723 1866.36093723 0 0 0 140.04691723-5.34970492c2.24727335-2.98310674 4.21612437-6.18497483 6.3937923-9.2178004 30.66633723 30.70611158 55.4360664 65.4791928 72.80769147 103.21549355 11.00766384 23.91457269 46.15860503 21.27949489 52.69160879-4.22606768a371.15156223 371.15156223 0 0 0 11.514792-91.99901164c0-69.36717486-19.13165746-133.82216804-51.75690182-187.92578088-3.42062944-5.66790279-4.76302748-12.26056868-3.76865837-18.80351632a462.20625001 462.20625001 0 0 0 5.36959269-69.943909c-0.00994388-166.08943902-87.32547796-311.81420293-218.6915546-394.09823051zM605.93803103 357.87693858a93.93749974 93.93749974 0 1 1-187.89594924 6.1e-7 93.93749974 93.93749974 0 0 1 187.89594924-6.1e-7z" p-id="5405" data-v-c6073ba8></path><path d="M429.50777625 765.63860547C429.50777625 803.39355007 466.44236686 1000.39046097 512.00932183 1000.39046097c45.56695499 0 82.4922232-197.00623328 82.5015456-234.7518555 0-37.75494459-36.9345906-68.35043303-82.4922232-68.34111062-45.57627738-0.00932239-82.52019037 30.59548842-82.51086798 68.34111062z" p-id="5406" data-v-c6073ba8></path></svg></div></div></div>
+    <script src="/assets/js/app.ba9dffa7.js" defer></script><script src="/assets/js/3.e187f4e7.js" defer></script><script src="/assets/js/1.f46d3efc.js" defer></script><script src="/assets/js/15.f583dd68.js" defer></script>
+  </body>
+</html>

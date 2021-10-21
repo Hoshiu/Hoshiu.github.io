@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>关于学习 Nest.js 的感想 | Hoshiu</title>
+    <meta name="generator" content="VuePress 1.8.2">
+    <link rel="icon" href="https://i.postimg.cc/T1dHjKTF/1582774527132.png">
+    <meta name="description" content="投递日常">
+    <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no">
+    
+    <link rel="preload" href="/assets/css/0.styles.67ab6878.css" as="style"><link rel="preload" href="/assets/js/app.ba9dffa7.js" as="script"><link rel="preload" href="/assets/js/3.e187f4e7.js" as="script"><link rel="preload" href="/assets/js/1.f46d3efc.js" as="script"><link rel="preload" href="/assets/js/16.c28ea01e.js" as="script"><link rel="prefetch" href="/assets/js/10.86eab0e0.js"><link rel="prefetch" href="/assets/js/11.f52a8d80.js"><link rel="prefetch" href="/assets/js/12.15e6bcae.js"><link rel="prefetch" href="/assets/js/13.d01b6926.js"><link rel="prefetch" href="/assets/js/14.f349183c.js"><link rel="prefetch" href="/assets/js/15.f583dd68.js"><link rel="prefetch" href="/assets/js/17.2e2dc605.js"><link rel="prefetch" href="/assets/js/18.6ceabf32.js"><link rel="prefetch" href="/assets/js/19.7711c2fc.js"><link rel="prefetch" href="/assets/js/20.088818e4.js"><link rel="prefetch" href="/assets/js/21.835e04b1.js"><link rel="prefetch" href="/assets/js/22.ebd1b942.js"><link rel="prefetch" href="/assets/js/4.bd9aa751.js"><link rel="prefetch" href="/assets/js/5.6d45fd98.js"><link rel="prefetch" href="/assets/js/6.53a3fb6b.js"><link rel="prefetch" href="/assets/js/7.4a73fb61.js"><link rel="prefetch" href="/assets/js/8.13a9960b.js"><link rel="prefetch" href="/assets/js/9.c85343be.js">
+    <link rel="stylesheet" href="/assets/css/0.styles.67ab6878.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container no-sidebar" data-v-1156296a><div data-v-1156296a><div id="loader-wrapper" class="loading-wrapper" data-v-d48f4d20 data-v-1156296a data-v-1156296a><div class="loader-main" data-v-d48f4d20><div data-v-d48f4d20></div><div data-v-d48f4d20></div><div data-v-d48f4d20></div><div data-v-d48f4d20></div></div> <!----> <!----></div> <div class="password-shadow password-wrapper-out" style="display:none;" data-v-4e82dffc data-v-1156296a data-v-1156296a><h3 class="title" data-v-4e82dffc data-v-4e82dffc>Hoshiu</h3> <p class="description" data-v-4e82dffc data-v-4e82dffc>投递日常</p> <label id="box" class="inputBox" data-v-4e82dffc data-v-4e82dffc><input type="password" value="" data-v-4e82dffc> <span data-v-4e82dffc>Konck! Knock!</span> <button data-v-4e82dffc>OK</button></label> <div class="footer" data-v-4e82dffc data-v-4e82dffc><span data-v-4e82dffc><i class="iconfont reco-theme" data-v-4e82dffc></i> <a target="blank" href="https://vuepress-theme-reco.recoluan.com" data-v-4e82dffc>vuePress-theme-reco</a></span> <span data-v-4e82dffc><i class="iconfont reco-copyright" data-v-4e82dffc></i> <a data-v-4e82dffc><span data-v-4e82dffc>Hoshiu</span>
+            
+          <span data-v-4e82dffc>2020 - </span>
+          2021
+        </a></span></div></div> <div class="hide" data-v-1156296a><header class="navbar" data-v-1156296a><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/" class="home-link router-link-active"><img src="https://i.postimg.cc/T1dHjKTF/1582774527132.png" alt="Hoshiu" class="logo"> <span class="site-name">Hoshiu</span></a> <div class="links"><div class="color-picker"><a class="color-button"><i class="iconfont reco-color"></i></a> <div class="color-picker-menu" style="display:none;"><div class="mode-options"><h4 class="title">Choose mode</h4> <ul class="color-mode-options"><li class="dark">dark</li><li class="auto active">auto</li><li class="light">light</li></ul></div></div></div> <div class="search-box"><i class="iconfont reco-search"></i> <input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/" class="nav-link"><i class="iconfont reco-home"></i>
+  主页
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title"><i class="iconfont reco-category"></i>
+      博客
+    </span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/categories/学习笔记/" class="nav-link"><i class="undefined"></i>
+  学习笔记
+</a></li><li class="dropdown-item"><!----> <a href="/categories/感想拾遗/" class="nav-link"><i class="undefined"></i>
+  感想拾遗
+</a></li></ul></div></div><div class="nav-item"><a href="/tag/" class="nav-link"><i class="iconfont reco-tag"></i>
+  标签
+</a></div><div class="nav-item"><a href="/timeline/" class="nav-link"><i class="iconfont reco-date"></i>
+  时间轴
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title"><i class="iconfont reco-account"></i>
+      contact
+    </span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="https://github.com/Hoshiu" target="_blank" rel="noopener noreferrer" class="nav-link external"><i class="iconfont reco-github"></i>
+  GitHub
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li><li class="dropdown-item"><!----> <a href="https://blog.csdn.net/Ryou__?spm=1038.2274.3001.5343&amp;type=blog" target="_blank" rel="noopener noreferrer" class="nav-link external"><i class="iconfont reco-csdn"></i>
+  CSDN
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li><li class="dropdown-item"><!----> <a href="/About/" class="nav-link"><i class="iconfont reco-wechat"></i>
+  AboutMe
+</a></li></ul></div></div> <!----></nav></div></header> <div class="sidebar-mask" data-v-1156296a></div> <aside class="sidebar" data-v-1156296a><div class="personal-info-wrapper" data-v-828910c6 data-v-1156296a><img src="/Rintaron.jpg" alt="author-avatar" class="personal-img" data-v-828910c6> <h3 class="name" data-v-828910c6>
+    Hoshiu
+  </h3> <div class="num" data-v-828910c6><div data-v-828910c6><h3 data-v-828910c6>9</h3> <h6 data-v-828910c6>Articles</h6></div> <div data-v-828910c6><h3 data-v-828910c6>8</h3> <h6 data-v-828910c6>Tags</h6></div></div> <ul class="social-links" data-v-828910c6></ul> <hr data-v-828910c6></div> <nav class="nav-links"><div class="nav-item"><a href="/" class="nav-link"><i class="iconfont reco-home"></i>
+  主页
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title"><i class="iconfont reco-category"></i>
+      博客
+    </span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/categories/学习笔记/" class="nav-link"><i class="undefined"></i>
+  学习笔记
+</a></li><li class="dropdown-item"><!----> <a href="/categories/感想拾遗/" class="nav-link"><i class="undefined"></i>
+  感想拾遗
+</a></li></ul></div></div><div class="nav-item"><a href="/tag/" class="nav-link"><i class="iconfont reco-tag"></i>
+  标签
+</a></div><div class="nav-item"><a href="/timeline/" class="nav-link"><i class="iconfont reco-date"></i>
+  时间轴
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title"><i class="iconfont reco-account"></i>
+      contact
+    </span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="https://github.com/Hoshiu" target="_blank" rel="noopener noreferrer" class="nav-link external"><i class="iconfont reco-github"></i>
+  GitHub
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li><li class="dropdown-item"><!----> <a href="https://blog.csdn.net/Ryou__?spm=1038.2274.3001.5343&amp;type=blog" target="_blank" rel="noopener noreferrer" class="nav-link external"><i class="iconfont reco-csdn"></i>
+  CSDN
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li><li class="dropdown-item"><!----> <a href="/About/" class="nav-link"><i class="iconfont reco-wechat"></i>
+  AboutMe
+</a></li></ul></div></div> <!----></nav> <!----> </aside> <div class="password-shadow password-wrapper-in" style="display:none;" data-v-4e82dffc data-v-1156296a><h3 class="title" data-v-4e82dffc data-v-4e82dffc>关于学习 Nest.js 的感想</h3> <!----> <label id="box" class="inputBox" data-v-4e82dffc data-v-4e82dffc><input type="password" value="" data-v-4e82dffc> <span data-v-4e82dffc>Konck! Knock!</span> <button data-v-4e82dffc>OK</button></label> <div class="footer" data-v-4e82dffc data-v-4e82dffc><span data-v-4e82dffc><i class="iconfont reco-theme" data-v-4e82dffc></i> <a target="blank" href="https://vuepress-theme-reco.recoluan.com" data-v-4e82dffc>vuePress-theme-reco</a></span> <span data-v-4e82dffc><i class="iconfont reco-copyright" data-v-4e82dffc></i> <a data-v-4e82dffc><span data-v-4e82dffc>Hoshiu</span>
+            
+          <span data-v-4e82dffc>2020 - </span>
+          2021
+        </a></span></div></div> <div data-v-1156296a><main class="page"><section><div class="page-title"><h1 class="title">关于学习 Nest.js 的感想</h1> <div data-v-1ff7123e><i class="iconfont reco-account" data-v-1ff7123e><span data-v-1ff7123e>Hoshiu</span></i> <i class="iconfont reco-date" data-v-1ff7123e><span data-v-1ff7123e>7/23/2021</span></i> <i class="iconfont reco-eye" data-v-1ff7123e><span id="/blogs/Node/NestJs.html" data-flag-title="Your Article Title" class="leancloud-visitors" data-v-1ff7123e><a class="leancloud-visitors-count" style="font-size:.9rem;font-weight:normal;color:#999;"></a></span></i> <i class="tags iconfont reco-tag" data-v-1ff7123e><span class="tag-item" data-v-1ff7123e>Node.js</span></i></div></div> <div class="theme-reco-content content__default"><h1 id="关于学习-nest-js-的感想"><a href="#关于学习-nest-js-的感想" class="header-anchor">#</a> 关于学习 Nest.js 的感想</h1> <p>其实学习下来感觉个人非常喜欢 Nest.js，但比较可惜的是在国内不温不火，毕竟国内的公司感觉大多都偏向直接用 Golang 或者 Java 这种后端语言来写后端，甚至于 egg.js。但 Nest 作为一个 Node.js 的 web server 框架，在我学习前后端交互时有所获益。</p> <p>之前有幸参加过武汉的前端充电站，根据淘系团队的讲解，感觉 midway 也很有学习的价值，之后可以参考学习。</p> <h2 id="框架简介"><a href="#框架简介" class="header-anchor">#</a> 框架简介</h2> <blockquote><p>Nest 是一个用于构建高效，可扩展的 <a href="http://nodejs.cn/" target="_blank" rel="noopener noreferrer">Node.js<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a> 服务器端应用程序的框架。它使用渐进式 JavaScript，内置并完全支持 <a href="https://www.tslang.cn/" target="_blank" rel="noopener noreferrer">TypeScript<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a>（但仍然允许开发人员使用纯 JavaScript 编写代码）并结合了 OOP（面向对象编程），FP（函数式编程）和 FRP（函数式响应编程）的元素。</p> <p>在底层，Nest使用强大的 HTTP Server 框架，如 Express（默认）和 Fastify。Nest 在这些框架之上提供了一定程度的抽象，同时也将其 API 直接暴露给开发人员。这样可以轻松使用每个平台的无数第三方模块。</p></blockquote> <p>简单来说， Nest.js 是一款 Node.js 的后端框架，胜在<strong>规范化</strong>和<strong>开箱即用</strong>，在国外开发者社区非常流行，值得尝试一下。</p> <h2 id="前置准备"><a href="#前置准备" class="header-anchor">#</a> 前置准备</h2> <ul><li>TypeScript/JavaScript</li> <li>HTTP</li> <li>MySQL/MongoDB, etc</li> <li>Node.js &gt;= 10.13.0</li></ul> <p>官网给出了使用 Nest.js 构建项目的方法，建议使用 Nest CLI 构建项目，脚手架的好处在于相关项目文件的生成便利。</p> <div class="language- extra-class"><pre class="language-text"><code>npm i -g @nestjs/cli
+nest new project-name
+</code></pre></div><p>初始化项目后，进入该项目运行即可。</p> <div class="language- extra-class"><pre class="language-text"><code>cd project-name
+yarn start:dev		//使用 dev 模式启动可以自动监测文件内容的变化，并自动重启服务，便于开发。
+</code></pre></div><blockquote><p>此命令启动 HTTP 服务监听定义在 <code>src/main.ts</code> 文件中定义的端口号。在应用程序运行后, 打开浏览器并访问 <code>http://localhost:3000/</code>。 你应该看到 <code>Hello world!</code> 信息。</p></blockquote> <p>接下来需要使用 MySQL 操作数据库，当然并不只限于它，任何你偏好的 SQL 或 NoSQL 皆可，这里我使用 MySQL 进行学习。</p> <h2 id="代码编写"><a href="#代码编写" class="header-anchor">#</a> 代码编写</h2> <p>后端主要遵循 MVC 模式。同理，Nest.js 分为 controller、service 和 model，分别定义了路由，数据库操作以及数据库的模型。</p> <p>以最经典的用户模块来看，编写一个后端的用户接口，来完成登录注册的相关内容。</p> <h3 id="创建-module"><a href="#创建-module" class="header-anchor">#</a> 创建 Module</h3> <p>首先创建一个<code>User</code>模块</p> <div class="language- extra-class"><pre class="language-text"><code>nest g module user server
+</code></pre></div><p>Nest CLi 会在 <code>src/server/user</code>下创建一个名为 <code>user.module.ts</code>的文件，它用来组织应用程序结构。</p> <div class="language- extra-class"><pre class="language-text"><code>// user.module.ts
+import { Module } from '@nestjs/common';
+
+@Module({})
+export class UserModule {}
+</code></pre></div><p>我们需要在根模块中引入 User 模块来使用它，即<code>app.module.ts</code>，但基于上面创建 User 模块的指令，<code>app.module.ts</code>中的代码已经自行引入该模块。</p> <div class="language- extra-class"><pre class="language-text"><code>// app.module.ts
+import { Module } from '@nestjs/common';
+import { AppController } from './app.controller';
+import { AppService } from './app.service';
+import { UserModule } from './server/user/user.module'; // 自动引入
+
+@Module({
+  imports: [UserModule], // 自动引入
+  controllers: [AppController],
+  providers: [AppService]
+})
+export class AppModule {}
+</code></pre></div><h3 id="创建-controller"><a href="#创建-controller" class="header-anchor">#</a> 创建 Controller</h3> <p>@Controll 装饰器用来处理对应的请求路由，控制器的目的是接收应用的特定请求。<strong>路由</strong>机制控制哪个控制器接收哪些请求。通常，每个控制器有多个路由，不同的路由可以执行不同的操作。</p> <p>与上面同理，输入以下内容</p> <div class="language- extra-class"><pre class="language-text"><code>nest g controller user server
+</code></pre></div><p>会发现<code>src/server/user</code>中多了一个<code>user.controller.ts</code>文件，它用来处理相应的路由请求。</p> <div class="language- extra-class"><pre class="language-text"><code>// user.controller.ts
+import { Get } from '@nestjs/common';
+import { UserService } from './user.service';
+interface UserResponse&lt;T = [] | boolean | User&gt; {
+  code: number;
+  data?: T;
+  message: string;
+}
+
+@Controller('user')
+export class UserController {
+  constructor(private readonly userService: UserService) {}
+
+  @Get('users')
+  async findAll(): Promise&lt;UserResponse&lt;User[]&gt;&gt; {
+    return {
+      code: 200,
+      data: await this.userService.findAll(),
+      message: 'Success.',
+    };
+  }
+}
+</code></pre></div><p>这里我们导入一个 Get 方法，并创建了一个路径为<code>user/users</code>的路由，当我们通过Get 请求访问<code>http://localhost:3000/user/users</code>时，会返回该异步方法的结果。</p> <p>在创建 Controller 文件时，引入了 <code>./user.service</code>，是因为 controller 并不能直接查询数据库并返回结果，而是需要转交给 Provider来处理，这种方式很常见，例如 Redux Thunk、Vuex。</p> <h3 id="创建-provider"><a href="#创建-provider" class="header-anchor">#</a> 创建 Provider</h3> <div class="language- extra-class"><pre class="language-text"><code>nest g service user server
+</code></pre></div><p><code>provider</code> 我们可以简单地从字面意思来理解，就是<strong>服务的提供者</strong>，它可以提供相应的<strong>数据库操作服务</strong>。</p> <p><code>Providers</code> 是纯粹的 <code>JavaScript</code> 类，在其类声明之前带有 <code>@Injectable()</code>装饰器。</p> <div class="language- extra-class"><pre class="language-text"><code>// user.service.ts
+import { Injectable } from '@nestjs/common';
+
+@Injectable()
+export class UserService {}
+</code></pre></div><p>这里创建的了service 用来进行数据库操作，事实上它还可以进行一些校验操作。比如 <strong>JWT</strong> 登录校验等，封装一个对用户权限进行校验的策略类来为模块提供响应的服务。</p> <p>最终 <code>user.moudule.ts</code>文件变成如下结果</p> <div class="language- extra-class"><pre class="language-text"><code>// user.module.ts
+import { Module } from '@nestjs/common';
+import { UserController } from './user.controller';
+import { UserService } from './user.service';
+
+@Module({
+  controllers: [UserController],
+  providers: [UserService]
+})
+export class UserModule {}
+</code></pre></div><p>此时，基本的内容有所完成，我们可以开始连接数据库了。</p> <h2 id="数据库相关操作"><a href="#数据库相关操作" class="header-anchor">#</a> 数据库相关操作</h2> <h3 id="连接-mysql-数据库"><a href="#连接-mysql-数据库" class="header-anchor">#</a> 连接 MySQL 数据库</h3> <blockquote><p>为了与 <code>SQL</code>和 <code>NoSQL</code> 数据库集成，<code>Nest</code> 提供了 <code>@nestjs/typeorm</code> 包。<code>Nest</code> 使用<a href="https://github.com/typeorm/typeorm" target="_blank" rel="noopener noreferrer">TypeORM<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a>是因为它是 <code>TypeScript</code> 中最成熟的对象关系映射器( <code>ORM</code> )。因为它是用 <code>TypeScript</code> 编写的，所以可以很好地与 <code>Nest</code> 框架集成。为所选数据库安装相关的客户端 <code>API</code> 库。</p></blockquote> <p>我是用的是 MySQL，需要安装相应的<code>API</code>库</p> <div class="language- extra-class"><pre class="language-text"><code>npm install --save @nestjs/typeorm typeorm mysql2
+</code></pre></div><p>将 <code>TypeOrmModule</code> 导入<code>AppModule</code> 。</p> <div class="language- extra-class"><pre class="language-text"><code>// app.module.ts
+import { Module } from '@nestjs/common';
+import { TypeOrmModule } from '@nestjs/typeorm';
+import { Connection } from 'typeorm';
+import { AppController } from './app.controller';
+import { AppService } from './app.service';
+import { UserModule } from './server/user/user.module';
+
+@Module({
+  imports: [
+    TypeOrmModule.forRoot({
+      type: 'mysql',
+      host: 'localhost',
+      port: XXXX,
+      username: 'XXXXX',
+      password: 'XXXXXX',
+      database: 'users_info',
+      entities: [__dirname + '/**/*.entity{.ts,.js}'],
+      synchronize: false,
+    }),
+    UserModule,
+  ],
+  controllers: [AppController],
+  providers: [AppService],
+})
+export class AppModule {
+  constructor(private connection: Connection) {}
+}
+</code></pre></div><p>接下来就是 数据库的<code>CRUD</code>，来完善我们的登录注册接口。</p> <h3 id="crud"><a href="#crud" class="header-anchor">#</a> CRUD</h3> <p>CRUD，意为对数据库的增删改查。</p> <p>此前我们已经写好了模块（Module）、路由（Controller）、以及相关的数据库操作服务（Provider）。实际上，Controller 中并不能直接更改数据库，它需要调用 Provider 中的方法来操作数据库，因此我们在 <code>user.service.ts</code>中增加一些操作，并使用 <code>async</code> 函数来处理异步的过程。</p> <div class="language- extra-class"><pre class="language-text"><code>import { Injectable } from '@nestjs/common';
+import { User } from './user.entity';
+import { InjectRepository } from '@nestjs/typeorm';
+import { Repository } from 'typeorm';
+import { CreateUserDTO, EditUserDTO, LoginUserDTO } from './user.dto';
+
+@Injectable()
+export class UserService {
+  constructor(
+    @InjectRepository(User)
+    private readonly userRepository: Repository&lt;User&gt;,
+  ) {}
+
+  // 查找所有用户
+  async findAll(): Promise&lt;User[]&gt; {
+    const users = await this.userRepository.find();
+    return users;
+  }
+
+  // 查找单个用户
+  async findOne(id: string): Promise&lt;User&gt; {
+    return await this.userRepository.findOne(id);
+  }
+
+  // 添加单个用户
+  async addOne(body: CreateUserDTO): Promise&lt;void&gt; {
+    await this.userRepository.insert(body);
+  }
+
+  // 编辑单个用户
+  async editOne(id: string, body: EditUserDTO): Promise&lt;void&gt; {
+    await this.userRepository.update(id, body);
+  }
+
+  // 删除单个用户
+  async deleteOne(id: string): Promise&lt;void&gt; {
+    await this.userRepository.delete(id);
+  }
+
+  // 登录
+  async loginOne(body: LoginUserDTO): Promise&lt;boolean&gt; {
+    const user = await this.userRepository.findOne(body.id);
+    if (user.password === body.password) {
+      return true;
+    } else {
+      return false;
+    }
+  }
+}
+</code></pre></div><p>这个时候，我们需要在<code>src/user</code>路径中新增一个名为<code>user.dto.ts</code>的文件，使用其来对数据类型进行定义，用以规范数据。</p> <div class="language- extra-class"><pre class="language-text"><code>// user.dto.ts
+export class CreateUserDTO {
+  readonly id: string;
+  readonly name: string;
+  readonly password: string;
+}
+
+export class EditUserDTO {
+  readonly name: string;
+  readonly password: string;
+}
+
+export class LoginUserDTO {
+  readonly id: string;
+  readonly password: string;
+}
+</code></pre></div><p>如此，我们可以在 <code>user.controller.ts</code> 中设置路由并调用相应方法了。</p> <div class="language- extra-class"><pre class="language-text"><code>// user.controller.ts
+import {
+  Body,
+  Controller,
+  Delete,
+  Get,
+  Param,
+  Post,
+  Put,
+} from '@nestjs/common';
+import { UserService } from './user.service';
+import { User } from './user.entity';
+import { CreateUserDTO, EditUserDTO, LoginUserDTO } from './user.dto';
+
+interface UserResponse&lt;T = [] | boolean | User&gt; {
+  code: number;
+  data?: T;
+  message: string;
+}
+
+@Controller('user')
+export class UserController {
+  constructor(private readonly userService: UserService) {}
+
+  @Get('users')
+  async findAll(): Promise&lt;UserResponse&lt;User[]&gt;&gt; {
+    return {
+      code: 200,
+      data: await this.userService.findAll(),
+      message: 'Success.',
+    };
+  }
+
+  // GET /user/:id
+  @Get(':id')
+  async findOne(@Param('id') id: string): Promise&lt;UserResponse&lt;User&gt;&gt; {
+    const data = await this.userService.findOne(id);
+    if (data) {
+      return {
+        code: 200,
+        data: data,
+        message: 'Success.',
+      };
+    } else {
+      return {
+        code: 404,
+        data: null,
+        message: 'Can not found.',
+      };
+    }
+  }
+
+  // POST /user
+  @Post()
+  async addOne(@Body() body: CreateUserDTO): Promise&lt;UserResponse&gt; {
+    await this.userService.addOne(body);
+    return {
+      code: 200,
+      message: 'Success.',
+    };
+  }
+  // POST /user/login
+  @Post('/login')
+  async loginOne(@Body() body: LoginUserDTO): Promise&lt;UserResponse&gt; {
+    return {
+      code: 200,
+      data: await this.userService.loginOne(body),
+      message: 'Success.',
+    };
+  }
+
+  // PUT /user/:id
+  @Put(':id')
+  async editOne(
+    @Param('id') id: string,
+    @Body() body: EditUserDTO,
+  ): Promise&lt;UserResponse&gt; {
+    await this.userService.editOne(id, body);
+    return {
+      code: 200,
+      data: await this.userService.findOne(id),
+      message: 'Success.',
+    };
+  }
+
+  // DELETE /user/:id
+  @Delete(':id')
+  async deleteOne(@Param('id') id: string): Promise&lt;UserResponse&gt; {
+    await this.userService.deleteOne(id);
+    return {
+      code: 200,
+      message: 'Success.',
+    };
+  }
+}
+</code></pre></div><p>如此便完成了一个基本的 <code>CRUD</code> 操作，可以通过 <code>Postman</code> 或者 <code>Swagger</code> 之类的接口自测工具进行测试。</p> <h3 id="接口测试"><a href="#接口测试" class="header-anchor">#</a> 接口测试</h3> <h4 id="get-user-users"><a href="#get-user-users" class="header-anchor">#</a> GET /user/users</h4> <img src="/img/NestJs/image-20210922222815825.png" alt="GetAll"> <p>这里我已经添加一些初始数据。</p> <h4 id="post-users"><a href="#post-users" class="header-anchor">#</a> POST /users</h4> <img src="/img/NestJs/image-20210923004604125.png" alt="PostOne"> <p>向其中写入一条数据，返回写入成功的响应。</p> <h4 id="get-user-id"><a href="#get-user-id" class="header-anchor">#</a> GET /user/:id</h4> <img src="/img/NestJs/image-20210923004822710.png" alt="GetOne"> <p>查看刚才写入的用户信息，返回成功。</p> <h4 id="put-user-id"><a href="#put-user-id" class="header-anchor">#</a> PUT /user/:id</h4> <p>有时我们需要修改用户数据，这时需要发送一个 <code>PUT</code> 请求</p> <img src="/img/NestJs/image-20210923005052789.png" alt="PutOne"> <h4 id="delete-user-id"><a href="#delete-user-id" class="header-anchor">#</a> DELETE /user/:id</h4> <img src="/img/NestJs/image-20210923005131674.png" alt="DeleteOne"> <p>再去查看该<code>id</code>对应的用户，已经找不到了。</p> <img src="/img/NestJs/image-20210923010019689.png" alt="DeleteOne"> <p>如此，便完成了一个基本的 <code>CRUD</code>，前端通过<code>Ajax</code>请求访问该端口，通过不同方法即可请求到数据，做到了前后端交互。</p> <h2 id="总结"><a href="#总结" class="header-anchor">#</a> 总结</h2> <p>其实在学习过程中还是遇到了很多坑的，自己也是查阅了官方文档以及许多优秀作者的博客才得以理解这些基本的功能，。简单来说 <code>Nest.js</code>是一个比较好用的 <code>Node.js</code>应用，但其中还有很多东西可以完善，我们大可以进行对数据库数据进行更多限制，以及一些错误捕获，还有之前提到的 <strong>JWT</strong>登陆校验等等，都是我们完善的方向。这个就需要后面去研究学习了。</p> <p>对作为学习前端的我来说，这让我了解了部分后端的工作，便于理解前后端交互的过程。</p> <p>接下来对 Midway 非常感兴趣，希望有时间能够研究一下。</p></div></section> <footer class="page-edit"><!----> <!----></footer> <!----> <div class="comments-wrapper"><!----></div> <ul class="side-bar sub-sidebar-wrapper" style="width:12rem;" data-v-70334359><li class="level-2" data-v-70334359><a href="/blogs/Node/NestJs.html#框架简介" class="sidebar-link reco-side-框架简介" data-v-70334359>框架简介</a></li><li class="level-2" data-v-70334359><a href="/blogs/Node/NestJs.html#前置准备" class="sidebar-link reco-side-前置准备" data-v-70334359>前置准备</a></li><li class="level-2" data-v-70334359><a href="/blogs/Node/NestJs.html#代码编写" class="sidebar-link reco-side-代码编写" data-v-70334359>代码编写</a></li><li class="level-3" data-v-70334359><a href="/blogs/Node/NestJs.html#创建-module" class="sidebar-link reco-side-创建-module" data-v-70334359>创建 Module</a></li><li class="level-3" data-v-70334359><a href="/blogs/Node/NestJs.html#创建-controller" class="sidebar-link reco-side-创建-controller" data-v-70334359>创建 Controller</a></li><li class="level-3" data-v-70334359><a href="/blogs/Node/NestJs.html#创建-provider" class="sidebar-link reco-side-创建-provider" data-v-70334359>创建 Provider</a></li><li class="level-2" data-v-70334359><a href="/blogs/Node/NestJs.html#数据库相关操作" class="sidebar-link reco-side-数据库相关操作" data-v-70334359>数据库相关操作</a></li><li class="level-3" data-v-70334359><a href="/blogs/Node/NestJs.html#连接-mysql-数据库" class="sidebar-link reco-side-连接-mysql-数据库" data-v-70334359>连接 MySQL 数据库</a></li><li class="level-3" data-v-70334359><a href="/blogs/Node/NestJs.html#crud" class="sidebar-link reco-side-crud" data-v-70334359>CRUD</a></li><li class="level-3" data-v-70334359><a href="/blogs/Node/NestJs.html#接口测试" class="sidebar-link reco-side-接口测试" data-v-70334359>接口测试</a></li><li class="level-2" data-v-70334359><a href="/blogs/Node/NestJs.html#总结" class="sidebar-link reco-side-总结" data-v-70334359>总结</a></li></ul></main> <!----></div></div></div></div><div class="global-ui"><div class="back-to-ceiling" style="right:1rem;bottom:6rem;width:2.5rem;height:2.5rem;border-radius:.25rem;line-height:2.5rem;display:none;" data-v-c6073ba8 data-v-c6073ba8><svg t="1574745035067" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="5404" class="icon" data-v-c6073ba8><path d="M526.60727968 10.90185116a27.675 27.675 0 0 0-29.21455937 0c-131.36607665 82.28402758-218.69155461 228.01873535-218.69155402 394.07834331a462.20625001 462.20625001 0 0 0 5.36959153 69.94390903c1.00431239 6.55289093-0.34802892 13.13561351-3.76865779 18.80351572-32.63518765 54.11355614-51.75690182 118.55860487-51.7569018 187.94566865a371.06718723 371.06718723 0 0 0 11.50484808 91.98906777c6.53300375 25.50556257 41.68394495 28.14064038 52.69160883 4.22606766 17.37162448-37.73630017 42.14135425-72.50938081 72.80769204-103.21549295 2.18761121 3.04276886 4.15646224 6.24463696 6.40373557 9.22774369a1871.4375 1871.4375 0 0 0 140.04691725 5.34970492 1866.36093723 1866.36093723 0 0 0 140.04691723-5.34970492c2.24727335-2.98310674 4.21612437-6.18497483 6.3937923-9.2178004 30.66633723 30.70611158 55.4360664 65.4791928 72.80769147 103.21549355 11.00766384 23.91457269 46.15860503 21.27949489 52.69160879-4.22606768a371.15156223 371.15156223 0 0 0 11.514792-91.99901164c0-69.36717486-19.13165746-133.82216804-51.75690182-187.92578088-3.42062944-5.66790279-4.76302748-12.26056868-3.76865837-18.80351632a462.20625001 462.20625001 0 0 0 5.36959269-69.943909c-0.00994388-166.08943902-87.32547796-311.81420293-218.6915546-394.09823051zM605.93803103 357.87693858a93.93749974 93.93749974 0 1 1-187.89594924 6.1e-7 93.93749974 93.93749974 0 0 1 187.89594924-6.1e-7z" p-id="5405" data-v-c6073ba8></path><path d="M429.50777625 765.63860547C429.50777625 803.39355007 466.44236686 1000.39046097 512.00932183 1000.39046097c45.56695499 0 82.4922232-197.00623328 82.5015456-234.7518555 0-37.75494459-36.9345906-68.35043303-82.4922232-68.34111062-45.57627738-0.00932239-82.52019037 30.59548842-82.51086798 68.34111062z" p-id="5406" data-v-c6073ba8></path></svg></div></div></div>
+    <script src="/assets/js/app.ba9dffa7.js" defer></script><script src="/assets/js/3.e187f4e7.js" defer></script><script src="/assets/js/1.f46d3efc.js" defer></script><script src="/assets/js/16.c28ea01e.js" defer></script>
+  </body>
+</html>
